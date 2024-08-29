@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 20px;
 }
-/* stylelint-disable font-family-no-missing-fallback */
 
 button {
   background-color: #06495a;
