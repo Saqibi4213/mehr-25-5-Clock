@@ -15,7 +15,7 @@ The project replicates the functionality of the 25 + 5 Clock as specified by fre
 ## Demo 📸
 
 ![Demo](./src/images/clock.png)
-![FreeCodeCamp](./src/assests/f2.png)
+![FreeCodeCamp](./src/images)
 <br>
  [Live-link]()
 
