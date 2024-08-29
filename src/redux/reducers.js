@@ -67,7 +67,7 @@ const rootReducer = (state, action) => {
         };
       }
       return { ...currentState, isPlaying: !currentState.isPlaying };
-        case TICK:
+    case TICK:
       if (currentState.clockCount === 0) {
         return {
           ...currentState,
@@ -78,11 +78,11 @@ const rootReducer = (state, action) => {
                 ? currentState.breakCount
                 : currentState.sessionCount) * 60,
         };
-      }
+    }
       return { ...currentState, clockCount: currentState.clockCount - 1 };
         default:
       return currentState;
   }
-};  
+};
 
 export default rootReducer;
