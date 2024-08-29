@@ -78,9 +78,9 @@ const rootReducer = (state, action) => {
                 ? currentState.breakCount
                 : currentState.sessionCount) * 60,
         };
-    }
+      }
       return { ...currentState, clockCount: currentState.clockCount - 1 };
-        default:
+    default:
       return currentState;
   }
 };
