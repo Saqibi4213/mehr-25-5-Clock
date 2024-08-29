@@ -59,25 +59,25 @@ const rootReducer = (state, action) => {
       };
     case PLAY_PAUSE:
       if (!currentState.isPlaying && !currentState.isStarted) {
-          return {
-            ...currentState,
-            isPlaying: !currentState.isPlaying,
-            isStarted: true,
-            clockCount: currentState.sessionCount * 60,
-          };
-        }
-        return { ...currentState, isPlaying: !currentState.isPlaying };
-      case TICK:
-        if (currentState.clockCount === 0) {
-          return {
-            ...currentState,
-            currentTimer:
-              currentState.currentTimer === 'Session' ? 'Break' : 'Session',
-            clockCount:
+        return {
+          ...currentState,
+          isPlaying: !currentState.isPlaying,
+          isStarted: true,
+          clockCount: currentState.sessionCount * 60,
+        };
+      }
+      return { ...currentState, isPlaying: !currentState.isPlaying };
+        case TICK:
+      if (currentState.clockCount === 0) {
+        return {
+          ...currentState,
+          currentTimer:
+          currentState.currentTimer === 'Session' ? 'Break' : 'Session',
+          clockCount:
               (currentState.currentTimer === 'Session'
                 ? currentState.breakCount
                 : currentState.sessionCount) * 60,
-          };
+        };
         }
         return { ...currentState, clockCount: currentState.clockCount - 1 };
       default:
