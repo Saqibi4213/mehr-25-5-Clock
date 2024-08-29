@@ -1,12 +1,12 @@
 import {
-    INCREMENT_BREAK,
-    DECREMENT_BREAK,
-    INCREMENT_SESSION,
-    DECREMENT_SESSION,
-    RESET,
-    PLAY_PAUSE,
-    TICK,
-  } from './actions';
+  INCREMENT_BREAK,
+  DECREMENT_BREAK,
+  INCREMENT_SESSION,
+  DECREMENT_SESSION,
+  RESET,
+  PLAY_PAUSE,
+  TICK,
+} from './actions';
   
   const initialState = {
     breakCount: 5,
