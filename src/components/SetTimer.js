@@ -13,7 +13,9 @@ function SetTimer({
   return (
     <div className="timer-container">
       <h2 id={`${id}-label`}>
-        {title} Length
+        {title}
+        <br /> {/* Line break for separating title and Length */}
+        Length
       </h2>
       <div className="flex actions-wrapper">
         <button
