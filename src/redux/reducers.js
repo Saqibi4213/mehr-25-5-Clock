@@ -21,18 +21,18 @@ const rootReducer = (state, action) => {
   const currentState = state === undefined ? initialState : state;
 
   switch (action.type) {
-      case INCREMENT_BREAK:
-        return currentState.breakCount < 60 && !currentState.isPlaying
-          ? { ...currentState, breakCount: currentState.breakCount + 1 }
-          : currentState;
-      case DECREMENT_BREAK:
-        return currentState.breakCount > 1 && !currentState.isPlaying
-          ? { ...currentState, breakCount: currentState.breakCount - 1 }
-          : currentState;
-      case INCREMENT_SESSION:
-        return currentState.sessionCount < 60 && !currentState.isPlaying
-          ? {
-            ...currentState,
+    case INCREMENT_BREAK:
+      return currentState.breakCount < 60 && !currentState.isPlaying
+        ? { ...currentState, breakCount: currentState.breakCount + 1 }
+        : currentState;
+    case DECREMENT_BREAK:
+      return currentState.breakCount > 1 && !currentState.isPlaying
+        ? { ...currentState, breakCount: currentState.breakCount - 1 }
+        : currentState;
+    case INCREMENT_SESSION:
+      return currentState.sessionCount < 60 && !currentState.isPlaying
+        ? {
+          ...currentState,
             sessionCount: currentState.sessionCount + 1,
             clockCount: currentState.isStarted
               ? currentState.clockCount
