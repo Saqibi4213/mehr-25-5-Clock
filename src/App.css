@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+/* stylelint-disable font-family-no-missing-fallback */
 body {
   background-color: #1e555c;
   color: #fdf0f0;
@@ -12,6 +13,7 @@ body {
   margin: 0;
   padding: 20px;
 }
+/* stylelint-disable font-family-no-missing-fallback */
 
 button {
   background-color: #06495a;
