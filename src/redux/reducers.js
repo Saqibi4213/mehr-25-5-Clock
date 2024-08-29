@@ -14,11 +14,10 @@ import {
     clockCount: 25 * 60,
     currentTimer: 'Session',
     isPlaying: false,
-    isStarted: false, // New state to track if the timer has started
+    isStarted: false,
   };
   
   const rootReducer = (state, action) => {
-    // Ensure state is initialized if undefined
     const currentState = state === undefined ? initialState : state;
   
     switch (action.type) {

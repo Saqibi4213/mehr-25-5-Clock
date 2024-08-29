@@ -6,7 +6,6 @@ export const RESET = 'RESET';
 export const PLAY_PAUSE = 'PLAY_PAUSE';
 export const TICK = 'TICK';
 
-// Action Creators
 export const incrementBreak = () => ({
   type: INCREMENT_BREAK,
 });

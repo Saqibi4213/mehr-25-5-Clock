@@ -20,7 +20,7 @@ function Clock({
           id="start_stop"
           onClick={handlePlayPause}
           type="button"
-          aria-label="Start or Stop Timer" // Added aria-label for accessibility
+          aria-label="Start or Stop Timer"
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
@@ -28,7 +28,7 @@ function Clock({
           id="reset"
           onClick={handleReset}
           type="button"
-          aria-label="Reset Timer" // Added aria-label for accessibility
+          aria-label="Reset Timer"
         >
           <FaSync />
         </button>
