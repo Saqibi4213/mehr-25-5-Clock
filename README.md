@@ -15,7 +15,7 @@ The project replicates the functionality of the 25 + 5 Clock as specified by fre
 ## Demo 📸
 
 ![Demo](./src/images/clock.png)
-![FreeCodeCamp](./src/images)
+![FreeCodeCamp](./src/images/f4.png)
 <br>
  [Live-link](https://66d1ba851638772f382dbd98--melodic-pasca-a1187d.netlify.app/)
 
